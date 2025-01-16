@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { Canvas } from '@react-three/fiber';
+import SplineViewer from './Components/SplineViewer';
+// import Header from './Components/Header';
+import Navbar from './Components/Header';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-container">
+      <Navbar />
+      <div className="content">
+        {/* Add the text overlay */}
+        <div className="text-overlay">
+          Your Business Need Our Software Solution
+        </div>
+
+       
+        <div className="scroll-container">
+          <SplineViewer />
+        </div>
+        
+      </div>
     </div>
   );
 }
