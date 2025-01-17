@@ -79,3 +79,10 @@
   overflow-y: auto; 
 }
 
+.spline-watermark {
+  position: fixed;
+  bottom: 10px; /* Example to move it */
+  right: 10px;
+  z-index: 9999; /* Ensure it's visible or controllable */
+  opacity: 0.5; /* Make it semi-transparent if needed */
+}

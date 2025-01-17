@@ -1,10 +1,14 @@
 import React from 'react';
-import '../App.css'; // Import the CSS file for styling
-import logo from '../Assets/alfa.png';
-const Navbar = () => {
+import { Link } from 'react-router-dom';
+import "../Assets/styles/global.css";
+import logo from "../Assets/images/Alfasq  logo.png";
+
+const Header = () => {
   return (
     <nav className="navbar">
-      <a href="/" className="logo"><img src={logo} alt="Logo"  className="logo-img" /></a>
+      <a href="/" className="logo">
+        <img src={logo} alt="Alfa Logo" className="logo-img" />
+      </a>
       <ul className="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -15,4 +19,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Header;
