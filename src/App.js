@@ -10,7 +10,7 @@ import Contact from './pages/Contact.jsx';
 const App = () => {
   return (
     <Router>
-      <Header /> 
+      <Header />
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
