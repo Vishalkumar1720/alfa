@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+
+  .text-custom {
+    color: #81859f !important;
+  }
+  
+  .text-custom:hover {
+    color: #ffffff !important;
+  }
+  .gradient-text {
+    background: linear-gradient(to right, #ea8d8d, #eec5bd, #f3b1a5 35%, #a890fe 72%, #dad9e9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }

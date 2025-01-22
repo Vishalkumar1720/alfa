@@ -1,13 +1,13 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
+import '../App.css'; // Link the CSS file
 
 const Home = () => {
   return (
-    <section>
-      <h2>Welcome to My React Website</h2>
-   
-      <p>This is the home page. Explore our services!</p>
-    </section>
+    <div className="container-fluid bg-black text-white vh-100 d-flex justify-content-center align-items-center">
+      <h1 className="display-4 text-center gradient-text">
+        Welcome to Alfasquare Software Solution
+      </h1>
+    </div>
   );
 };
 
