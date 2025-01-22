@@ -1,11 +1,14 @@
-import React from 'react'
+import React from 'react';
+import '../App.css';
 
-function About() {
+const About = () => {
   return (
-    <div>
-      this is about
+    <div className="container-fluid bg-black text-white vh-100 d-flex justify-content-center align-items-center">
+      <h1 className="display-4 text-center gradient-text">
+        About Alfasquare Software Solution
+      </h1>
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;

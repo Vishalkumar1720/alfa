@@ -1,6 +1,8 @@
 import React from 'react';
 import '../App.css'; // Link the CSS file
 import Contact from './Contact';
+import About from './About';
+import Services from './Services';
 
 const Home = () => {
   return (
@@ -10,6 +12,8 @@ const Home = () => {
           Welcome to Alfasquare Software Solution
         </h1>
       </div>
+      <About />
+      <Services />
       <Contact />
     </>
   );

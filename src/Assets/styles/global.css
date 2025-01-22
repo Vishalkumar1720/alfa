@@ -2,3 +2,28 @@ body {
     font-family: 'Inter', sans-serif;
   }
   
+  /* Customize the appearance of nav links */
+.nav-link.text-custom {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.nav-link.text-custom:hover {
+  color: #ffc107;
+}
+
+/* Make the brand logo responsive */
+.brand-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Adjust navbar height and padding for smaller devices */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.5rem 1rem;
+  }
+  .navbar-brand {
+    padding-left: 0.5rem;
+  }
+}
