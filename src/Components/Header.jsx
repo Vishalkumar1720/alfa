@@ -17,7 +17,7 @@ const Header = () => {
           backgroundColor: "rgba(33, 33, 33, 0.8)"
         }}
       >
-        <a className="navbar-brand d-flex align-items-center ps-md-4" href="#">
+        <a className="navbar-brand d-flex align-items-center ps-md-4" href="">
           <img
             src={logo}
             alt="Alfasquare logo"
@@ -33,7 +33,7 @@ const Header = () => {
           className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarTogglerDemo02"
+          data-bs-target="navbarTogglerDemo02"
           aria-controls="navbarTogglerDemo02"
           aria-expanded="false"
           aria-label="Toggle navigation"
@@ -43,22 +43,22 @@ const Header = () => {
         <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
             <li className="nav-item me-5">
-              <a className="nav-link text-custom" href="#">
+              <a className="nav-link text-custom" href="/">
                 Home
               </a>
             </li>
             <li className="nav-item me-5">
-              <a className="nav-link text-custom" href="#about">
+              <a className="nav-link text-custom" href="/about">
                 About
               </a>
             </li>
             <li className="nav-item me-5">
-              <a className="nav-link text-custom" href="#services">
+              <a className="nav-link text-custom" href="/services">
                 Services
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-custom" href="#contact">
+              <a className="nav-link text-custom" href="/contact">
                 Contact
               </a>
             </li>
