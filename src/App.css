@@ -1,47 +1,51 @@
-
-html, body {
+html,
+body {
   overflow-y: scroll;
 }
 
 
 html::-webkit-scrollbar,
 body::-webkit-scrollbar {
-  display: none; 
+  display: none;
 }
 
 html {
-  scrollbar-width: none; 
-  -ms-overflow-style: none; 
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 
-  .text-custom {
-    color: #81859f !important;
-  }
-  
-  .text-custom:hover {
-    color: #ffffff !important;
-  }
-  .gradient-text {
-    background: linear-gradient(to right, #ea8d8d, #eec5bd, #f3b1a5 35%, #a890fe 72%, #dad9e9);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-  }
+.text-custom {
+  color: #81859f !important;
+}
+
+.text-custom:hover {
+  color: #ffffff !important;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #ea8d8d, #eec5bd, #f3b1a5 35%, #a890fe 72%, #dad9e9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
 
 
-  .custom-input {
-    border-radius: 10px;
-    padding: 10px 20px;
-    background-color: transparent;
-    color: #fff;
-    border: 1px solid #fff;
-  }
-  
-  .custom-input::placeholder {
-    color: #fff;
-    opacity: 1;
-  }
-  
-  
+.custom-input {
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.custom-input::placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+.custom-input:focus {
+  background-color: transparent;
+  color: #fff;
+}
