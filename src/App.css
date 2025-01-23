@@ -30,3 +30,18 @@ html {
     text-fill-color: transparent;
   }
 
+
+  .custom-input {
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+  }
+  
+  .custom-input::placeholder {
+    color: #fff;
+    opacity: 1;
+  }
+  
+  

@@ -1,12 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css'; // Bootstrap CSS
-import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Bootstrap JS bundle
+import React, { useState, useEffect } from "react";
+import "bootstrap/dist/css/bootstrap.min.css"; // Bootstrap CSS
+import "bootstrap/dist/js/bootstrap.bundle.min.js"; // Bootstrap JS bundle
 import "../Assets/styles/global.css";
 import logo from "../Assets/images/Alfasq  logo.png"; // Import your logo
-import '../App.css'
+import "../App.css";
 
 const Header = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
+  const [isNavExpanded, setIsNavExpanded] = useState(false); // Track navbar expansion
 
   // Detect screen size
   useEffect(() => {
@@ -16,22 +17,25 @@ const Header = () => {
 
     // Initial check and add event listener
     handleResize();
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
     // Cleanup the event listener
-    return () => window.removeEventListener('resize', handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return (
     <div className="d-flex justify-content-center fixed-top p-2">
       <nav
-        className="navbar navbar-expand-lg rounded-pill position-fixed"
+        className={`navbar navbar-expand-lg position-fixed ${
+          !isSmallScreen || !isNavExpanded ? "rounded-pill" : ""
+        }`}
         style={{
           maxWidth: "730px",
           width: "100%",
           boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.25)",
           overflow: "hidden",
           backgroundColor: "rgba(33, 33, 33, 0.8)",
+          border: "1px solid rgba(255, 255, 255, .1)",
         }}
       >
         <a className="navbar-brand d-flex align-items-center ps-md-4" href="/">
@@ -46,78 +50,44 @@ const Header = () => {
           />
         </a>
 
-        {/* Menu for small screens */}
-        {isSmallScreen ? (
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#smallScreenMenu"
-            aria-controls="smallScreenMenu"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-        ) : (
-          // Menu for large screens
-          <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
-              <li className="nav-item me-lg-5 me-md-3 me-sm-2">
-                <a className="nav-link text-custom" href="/">
-                  Home
-                </a>
-              </li>
-              <li className="nav-item me-lg-5 me-md-3 me-sm-2">
-                <a className="nav-link text-custom" href="/about">
-                  About
-                </a>
-              </li>
-              <li className="nav-item me-lg-5 me-md-3 me-sm-2">
-                <a className="nav-link text-custom" href="/services">
-                  Services
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link text-custom" href="/contact">
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
-        )}
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#smallScreenMenu"
+          aria-controls="smallScreenMenu"
+          aria-expanded={isNavExpanded}
+          aria-label="Toggle navigation"
+          onClick={() => setIsNavExpanded(!isNavExpanded)} // Toggle state
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
 
-        {/* Small screen menu items */}
-        <div className="collapse navbar-collapse" id="smallScreenMenu">
-          {isSmallScreen && (
-            <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <a className="nav-link text-custom" href="/">
-                  Home
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link text-custom" href="/about">
-                  About
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link text-custom" href="/services">
-                  Services
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link text-custom" href="/contact">
-                  Contact
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link text-custom" href="/login">
-                  Login
-                </a>
-              </li>
-            </ul>
-          )}
+        {/* Menu items */}
+        <div className={`collapse navbar-collapse`} id="smallScreenMenu">
+          <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li className="nav-item">
+              <a className="nav-link text-custom" href="/">
+                Home
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link text-custom" href="/about">
+                About
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link text-custom" href="/services">
+                Services
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link text-custom" href="/contact">
+                Contact
+              </a>
+            </li>
+            
+          </ul>
         </div>
       </nav>
     </div>
