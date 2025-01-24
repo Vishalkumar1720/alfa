@@ -13,7 +13,7 @@ const Header = () => {
   // Detect screen size
   useEffect(() => {
     const handleResize = () => {
-      setIsSmallScreen(window.innerWidth < 768); // Small screen if width < 768px
+      setIsSmallScreen(window.innerWidth < 992); // Small screen if width < 768px
     };
 
     // Initial check and add event listener
@@ -65,7 +65,7 @@ const Header = () => {
 
         {/* Menu items */}
         <div className={`collapse navbar-collapse`} id="smallScreenMenu">
-          <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
+          <ul className="navbar-nav mx-auto mb-2 mb-lg-0 gap-4">
             <li className="nav-item">
               <Link className="nav-link text-custom" to="home" smooth={true} duration={500}>
                 Home
