@@ -12,9 +12,9 @@ const Home = () => {
           Welcome to Alfasquare Software Solution
         </h1>
       </div>
-      <About />
+      {/* <About />
       <Services />
-      <Contact />
+      <Contact /> */}
     </>
   );
 };
