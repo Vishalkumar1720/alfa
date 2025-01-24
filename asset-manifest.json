@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/alfa/static/css/main.b13e7dd9.css",
-    "main.js": "/alfa/static/js/main.5786513c.js",
+    "main.css": "/alfa/static/css/main.0934be0a.css",
+    "main.js": "/alfa/static/js/main.98979a68.js",
     "static/media/inter-latin-ext-700-normal.woff": "/alfa/static/media/inter-latin-ext-700-normal.149d81a49bd1ff0e6711.woff",
     "static/media/inter-latin-ext-400-normal.woff": "/alfa/static/media/inter-latin-ext-400-normal.1c20f7dc20d731a18fcd.woff",
     "static/media/Alfasq  logo.png": "/alfa/static/media/Alfasq  logo.c1f11c014e9cf8b16352.png",
@@ -32,11 +32,11 @@
     "static/media/inter-vietnamese-700-normal.woff2": "/alfa/static/media/inter-vietnamese-700-normal.5d9bfcacc44f345662ff.woff2",
     "static/media/inter-vietnamese-400-normal.woff2": "/alfa/static/media/inter-vietnamese-400-normal.44c9df135eec470b0ab6.woff2",
     "index.html": "/alfa/index.html",
-    "main.b13e7dd9.css.map": "/alfa/static/css/main.b13e7dd9.css.map",
-    "main.5786513c.js.map": "/alfa/static/js/main.5786513c.js.map"
+    "main.0934be0a.css.map": "/alfa/static/css/main.0934be0a.css.map",
+    "main.98979a68.js.map": "/alfa/static/js/main.98979a68.js.map"
   },
   "entrypoints": [
-    "static/css/main.b13e7dd9.css",
-    "static/js/main.5786513c.js"
+    "static/css/main.0934be0a.css",
+    "static/js/main.98979a68.js"
   ]
 }
