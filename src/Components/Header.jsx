@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-scroll";
 import "bootstrap/dist/css/bootstrap.min.css"; // Bootstrap CSS
 import "bootstrap/dist/js/bootstrap.bundle.min.js"; // Bootstrap JS bundle
 import "../Assets/styles/global.css";
@@ -26,9 +27,8 @@ const Header = () => {
   return (
     <div className="d-flex justify-content-center fixed-top p-2">
       <nav
-        className={`navbar navbar-expand-lg position-fixed ${
-          !isSmallScreen || !isNavExpanded ? "rounded-pill" : ""
-        }`}
+        className={`navbar navbar-expand-lg position-fixed ${!isSmallScreen || !isNavExpanded ? "rounded-pill" : ""
+          }`}
         style={{
           maxWidth: "730px",
           width: "100%",
@@ -67,26 +67,26 @@ const Header = () => {
         <div className={`collapse navbar-collapse`} id="smallScreenMenu">
           <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link text-custom" href="/">
+              <Link className="nav-link text-custom" to="home" smooth={true} duration={500}>
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-custom" href="/about">
+              <Link className="nav-link text-custom" to="about" smooth={true} duration={500}>
                 About
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-custom" href="/services">
+              <Link className="nav-link text-custom" to="services" smooth={true} duration={500}>
                 Services
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-custom" href="/contact">
+              <Link className="nav-link text-custom" to="contact" smooth={true} duration={500}>
                 Contact
-              </a>
+              </Link>
             </li>
-            
+
           </ul>
         </div>
       </nav>

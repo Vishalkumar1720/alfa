@@ -9,18 +9,32 @@ import Contact from './pages/Contact.jsx';
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <div>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-       
-      </div>
-    </BrowserRouter>
+    <div>
+      <Header />
+      <section id="home" className="section">
+        <Home />
+      </section>
+      <section id="services" className="section">
+        <About />
+      </section>
+      <section id="about" className="section">
+        <Services />
+      </section>
+      <section id="contact" className="section">
+        <Contact />
+      </section>
+    </div>
+    // <BrowserRouter>
+    //   <div>
+    //     <Routes>
+    //       <Route path="/" element={<Home />} />
+    //       <Route path="/about" element={<About />} />
+    //       <Route path="/services" element={<Services />} />
+    //       <Route path="/contact" element={<Contact />} />
+    //     </Routes>
+
+    //   </div>
+    // </BrowserRouter>
   );
 };
 

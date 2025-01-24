@@ -10,7 +10,7 @@ const Contact = () => {
             <div className='bg-dark p-5 rounded-5'>
               <div class="content-block about-content h-100 js-tilt" >
                 <p>In today’s online world, a powerful and user-friendly website is essential for business success. Whether it’s corporate, startup or e-Commerce, you need a website which engage users, help in conversions and drive business growth</p>
-                <h3 className="display-4 text-center gradient-text">
+                <h3 className="gradient-text">
                   What We Offer
                 </h3>
                 <div class="wwo">
@@ -38,12 +38,12 @@ const Contact = () => {
           <div className='col-lg-5'>
             <div className='bg-dark p-5 rounded-5'>
               <div>
-                <h3 className="display-4 text-center gradient-text">
+                <h3 className="text-center gradient-text">
                   Make an Enquiry
                 </h3>
                 <span className="mb-3 d-block text-center">Submit your details and someone from our team will contact you shortly. </span>
               </div>
-              <div>
+              <div className=''>
                 <form className="row g-3">
                   <div className="form-group">
                     <input type="text" className="form-control custom-input" id="name" placeholder='Name*' />
@@ -56,8 +56,10 @@ const Contact = () => {
                   </div>
                   <div className="form-group">
                     <input type="text" className="form-control custom-input" id="company" placeholder='Company*' />
+                  </div >
+                  <div className='d-flex justify-content-center mt-4'>
+                    <button type="submit" className="btn racb-btn  rounded-pill">SUBMIT</button>
                   </div>
-                  <button type="submit" className="btn btn-success rounded-pill">SUBMIT</button>
                 </form>
               </div>
             </div>

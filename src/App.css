@@ -34,7 +34,7 @@ html {
 
 .custom-input {
   border-radius: 10px;
-  padding: 10px 20px;
+  padding: 13px 20px;
   background-color: transparent;
   color: #fff;
   border: 1px solid #fff;
@@ -48,4 +48,16 @@ html {
 .custom-input:focus {
   background-color: transparent;
   color: #fff;
+}
+
+.racb-btn {
+  background-image: linear-gradient(to right bottom, #3fff00, #3af219, #37e625, #34d92d, #32cd32);
+  font-weight: bold;
+  padding: 15px 150px;
+  width: auto;
+  transition: all 0.3s ease;
+}
+
+.racb-btn:hover {
+  transform: scale(1.05);
 }
