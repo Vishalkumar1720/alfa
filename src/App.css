@@ -1,6 +1,7 @@
 html,
 body {
   overflow-y: scroll;
+  background-color: black;
 }
 
 
@@ -62,6 +63,14 @@ html {
 .racb-btn:hover {
   transform: scale(1.05);
 }
+
+@media (max-width: 576px) {
+  .racb-btn {
+    padding: 10px 30px; /* Smaller padding for mobile screens */
+  }
+}
+
+
 
 
 .col-lg-6 {

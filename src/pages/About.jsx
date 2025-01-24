@@ -3,8 +3,11 @@ import '../App.css';
 
 const About = () => {
   return (
-    <div className="container-fluid bg-black text-white vh-100 d-flex justify-content-center align-items-center">
-      <div className="container px-md-5">
+    <div className="container-fluid bg-black text-white vh-100 d-flex flex-column justify-content-center align-items-center">
+      <h1 className="display-4 text-center gradient-text">
+          Expertise
+        </h1>
+      <div className="container px-md-5 pt-5">
         <div className='row g-5'>
           <div className='col-lg-6' style={{ height: "500px", overflowY: "scroll" }}>
             <div className="">
