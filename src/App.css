@@ -55,7 +55,7 @@ html {
 .racb-btn {
   background-image: linear-gradient(to right bottom, #3fff00, #3af219, #37e625, #34d92d, #32cd32);
   font-weight: bold;
-  padding: 15px 150px;
+  padding: 3.5% 35%;
   width: auto;
   transition: all 0.3s ease;
 }
@@ -66,19 +66,17 @@ html {
 
 @media (max-width: 576px) {
   .racb-btn {
-    padding: 10px 30px; /* Smaller padding for mobile screens */
+    padding: 10px 30px;
+    /* Smaller padding for mobile screens */
   }
 }
-
-
-
 
 .col-lg-6 {
   height: 500px;
   overflow-y: scroll;
-  scrollbar-width: none; 
+  scrollbar-width: none;
 }
 
 .col-lg-6::-webkit-scrollbar {
-  display: none; 
+  display: none;
 }

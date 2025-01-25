@@ -1,18 +1,19 @@
 import React from 'react';
 import '../App.css';
+import AnimatedCounter from '../common/AnimatedCounter';
 
 const About = () => {
   return (
     <div className="container-fluid bg-black text-white vh-100 d-flex flex-column justify-content-center align-items-center">
       <h1 className="display-4 text-center gradient-text">
-          Expertise
-        </h1>
+        Expertise
+      </h1>
       <div className="container px-md-5 pt-5">
         <div className='row g-5'>
           <div className='col-lg-6' style={{ height: "500px", overflowY: "scroll" }}>
             <div className="">
               <div className="">
-                <h1 className="gradient-text">16+</h1>
+                <AnimatedCounter maxNumber={16} duration={1000} suffix="+" />
                 <p className="fw-bold">YEARS OF EXPERIENCE</p>
                 <p>
                   With over 16 years in the industry, we bring a wealth of experience
@@ -21,7 +22,7 @@ const About = () => {
                 </p>
               </div>
               <div className="">
-                <h1 className="gradient-text">1600+</h1>
+                <AnimatedCounter maxNumber={1600} duration={1000} suffix="+" />
                 <p className="fw-bold">PROJECT DELIVERED</p>
                 <p>
                   Our proven track record of delivering 1600+ successful projects
@@ -29,7 +30,7 @@ const About = () => {
                 </p>
               </div>
               <div className="">
-                <h1 className="gradient-text">650+</h1>
+                <AnimatedCounter maxNumber={650} duration={1000} suffix="+" />
                 <p className="fw-bold">CLIENTS SERVED</p>
                 <p>
                   From startups to global enterprises, we've proudly partnered with
@@ -38,7 +39,7 @@ const About = () => {
                 </p>
               </div>
               <div className="">
-                <h1 className="gradient-text">16+</h1>
+                <AnimatedCounter maxNumber={16} duration={1000} suffix="+" />
                 <p className="fw-bold">YEARS OF EXPERIENCE</p>
                 <p>
                   With over 16 years in the industry, we bring a wealth of experience
@@ -47,7 +48,7 @@ const About = () => {
                 </p>
               </div>
               <div className="">
-                <h1 className="gradient-text">1600+</h1>
+                <AnimatedCounter maxNumber={1600} duration={1000} suffix="+" />
                 <p className="fw-bold">PROJECT DELIVERED</p>
                 <p>
                   Our proven track record of delivering 1600+ successful projects
@@ -55,7 +56,7 @@ const About = () => {
                 </p>
               </div>
               <div className="">
-                <h1 className="gradient-text">650+</h1>
+                <AnimatedCounter maxNumber={650} duration={1000} suffix="+" />
                 <p className="fw-bold">CLIENTS SERVED</p>
                 <p>
                   From startups to global enterprises, we've proudly partnered with
@@ -85,15 +86,6 @@ const About = () => {
         </div>
       </div>
     </div >
-    // <div className="container-fluid bg-black text-white vh-100 d-flex justify-content-center align-items-center">
-    //   <h1 className="display-4 text-center gradient-text">
-    //     About Alfasquare Software Solution
-    //   </h1>
-    //   <div className="about-container">
-
-    //   </div>
-
-    // </div>
   );
 };
 

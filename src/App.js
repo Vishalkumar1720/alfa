@@ -11,18 +11,19 @@ const App = () => {
   return (
     <div>
       <Header />
-      <section id="home" className="section" style={{paddingBottom: "100px"}}>
+      <section id="home" className="section" style={{ paddingBottom: "100px" }}>
         <Home />
       </section>
-      <section id="about" className="section" style={{paddingBottom: "100px"}}>
+      <section id="about" className="section" style={{ paddingBottom: "100px" }}>
         <About />
       </section>
-      <section id="services" className="section" style={{paddingBottom: "100px"}}>
+      <section id="services" className="section" style={{ paddingBottom: "100px" }}>
         <Services />
       </section>
-      <section id="contact" className="section pb-5" style={{paddingBottom: "100px"}}>
+      <section id="contact" className="section pb-5" style={{ paddingBottom: "100px" }}>
         <Contact />
       </section>
+      <Footer />
     </div>
     // <BrowserRouter>
     //   <div>
