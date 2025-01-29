@@ -5,6 +5,7 @@
   "private": true,
   "dependencies": {
     "@fontsource/inter": "^5.1.1",
+    "@react-three/drei": "^9.121.4",
     "@react-three/fiber": "^8.17.12",
     "bootstrap": "^5.3.3",
     "cra-template": "1.2.0",
@@ -25,8 +26,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-"deploy": "gh-pages -d build"
-
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
