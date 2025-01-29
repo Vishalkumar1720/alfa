@@ -67,22 +67,22 @@ const Header = () => {
         <div className={`collapse navbar-collapse`} id="smallScreenMenu">
           <ul className="navbar-nav mx-auto mb-2 mb-lg-0 gap-4">
             <li className="nav-item">
-              <Link className="nav-link text-custom" to="home" smooth={true} duration={500}>
+              <Link className="nav-link text-custom" to="home" smooth={true} spy={true}  duration={500}>
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-custom" to="about" smooth={true} duration={500}>
+              <Link className="nav-link text-custom" to="about" smooth={true} spy={true}  duration={500}>
                 About
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-custom" to="services" smooth={true} duration={500}>
+              <Link className="nav-link text-custom" to="services" smooth={true} spy={true}  duration={500}>
                 Services
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-custom" to="contact" smooth={true} duration={500}>
+              <Link className="nav-link text-custom" to="contact" smooth={true} spy={true} duration={500}>
                 Contact
               </Link>
             </li>
