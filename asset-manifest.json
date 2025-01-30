@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/alfa/static/css/main.42ff7fa2.css",
-    "main.js": "/alfa/static/js/main.0048b6ee.js",
+    "main.js": "/alfa/static/js/main.1f806392.js",
     "static/media/Alfasq  logo.png": "/alfa/static/media/Alfasq  logo.c1f11c014e9cf8b16352.png",
     "index.html": "/alfa/index.html",
     "main.42ff7fa2.css.map": "/alfa/static/css/main.42ff7fa2.css.map",
-    "main.0048b6ee.js.map": "/alfa/static/js/main.0048b6ee.js.map"
+    "main.1f806392.js.map": "/alfa/static/js/main.1f806392.js.map"
   },
   "entrypoints": [
     "static/css/main.42ff7fa2.css",
-    "static/js/main.0048b6ee.js"
+    "static/js/main.1f806392.js"
   ]
 }
