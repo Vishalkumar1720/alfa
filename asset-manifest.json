@@ -1,14 +1,22 @@
 {
   "files": {
-    "main.css": "/alfa/static/css/main.42ff7fa2.css",
-    "main.js": "/alfa/static/js/main.1f806392.js",
+    "main.css": "/alfa/static/css/main.433831b6.css",
+    "main.js": "/alfa/static/js/main.dd5e210b.js",
+    "static/media/fa-solid-900.ttf": "/alfa/static/media/fa-solid-900.2582b0e4bcf85eceead0.ttf",
+    "static/media/fa-brands-400.ttf": "/alfa/static/media/fa-brands-400.1815e00441357e01619e.ttf",
+    "static/media/fa-solid-900.woff2": "/alfa/static/media/fa-solid-900.2463b90d9a316e4e5294.woff2",
+    "static/media/fa-brands-400.woff2": "/alfa/static/media/fa-brands-400.c210719e60948b211a12.woff2",
+    "static/media/fa-regular-400.ttf": "/alfa/static/media/fa-regular-400.914997e1bdfc990d0897.ttf",
     "static/media/Alfasq  logo.png": "/alfa/static/media/Alfasq  logo.c1f11c014e9cf8b16352.png",
+    "static/media/fa-regular-400.woff2": "/alfa/static/media/fa-regular-400.89999bdf5d835c012025.woff2",
+    "static/media/fa-v4compatibility.ttf": "/alfa/static/media/fa-v4compatibility.da94ef451f4969af06e6.ttf",
+    "static/media/fa-v4compatibility.woff2": "/alfa/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
     "index.html": "/alfa/index.html",
-    "main.42ff7fa2.css.map": "/alfa/static/css/main.42ff7fa2.css.map",
-    "main.1f806392.js.map": "/alfa/static/js/main.1f806392.js.map"
+    "main.433831b6.css.map": "/alfa/static/css/main.433831b6.css.map",
+    "main.dd5e210b.js.map": "/alfa/static/js/main.dd5e210b.js.map"
   },
   "entrypoints": [
-    "static/css/main.42ff7fa2.css",
-    "static/js/main.1f806392.js"
+    "static/css/main.433831b6.css",
+    "static/js/main.dd5e210b.js"
   ]
 }
