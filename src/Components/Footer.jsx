@@ -1,12 +1,17 @@
 import React from 'react';
+import SocialMediaIcons from './SocialMediaIcons';
 
 const Footer = () => {
   return (
-    <div className="container px-md-5 pt-5">
-      <footer>
-        <p>&copy; 2025 My React Website. All Rights Reserved.</p>
-      </footer>
-    </div>
+
+    <>
+    <SocialMediaIcons />
+    <footer>
+    
+      <p>&copy; 2025 Alfa Square Software Solution. All Rights Reserved.</p>
+    </footer>
+    </>
+
   );
 };
 
