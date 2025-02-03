@@ -13,7 +13,7 @@ const Header = () => {
   // Detect screen size
   useEffect(() => {
     const handleResize = () => {
-      setIsSmallScreen(window.innerWidth < 992); // Small screen if width < 768px
+      setIsSmallScreen(window.innerWidth < 992); // Small screen if width < 992px
     };
 
     // Initial check and add event listener
@@ -27,8 +27,9 @@ const Header = () => {
   return (
     <div className="d-flex justify-content-center fixed-top p-2">
       <nav
-        className={`navbar navbar-expand-lg position-fixed ${!isSmallScreen || !isNavExpanded ? "rounded-pill" : ""
-          }`}
+        className={`navbar navbar-expand-lg position-fixed ${
+          !isSmallScreen || !isNavExpanded ? "rounded-pill" : ""
+        }`}
         style={{
           maxWidth: "730px",
           width: "100%",
@@ -64,29 +65,56 @@ const Header = () => {
         </button>
 
         {/* Menu items */}
-        <div className={`collapse navbar-collapse`} id="smallScreenMenu">
+        <div className={`collapse navbar-collapse ${isNavExpanded ? "show" : ""}`} id="smallScreenMenu">
           <ul className="navbar-nav mx-auto mb-2 mb-lg-0 gap-4">
             <li className="nav-item">
-              <Link className="nav-link text-custom" to="home" smooth={true} spy={true}  duration={500}>
+              <Link
+                className="nav-link text-custom"
+                to="home"
+                smooth={true}
+                spy={true}
+                duration={500}
+                onClick={() => setIsNavExpanded(false)} // Close navbar on click
+              >
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-custom" to="about" smooth={true} spy={true}  duration={500}>
+              <Link
+                className="nav-link text-custom"
+                to="about"
+                smooth={true}
+                spy={true}
+                duration={500}
+                onClick={() => setIsNavExpanded(false)}
+              >
                 About
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-custom" to="services" smooth={true} spy={true}  duration={500}>
+              <Link
+                className="nav-link text-custom"
+                to="services"
+                smooth={true}
+                spy={true}
+                duration={500}
+                onClick={() => setIsNavExpanded(false)}
+              >
                 Services
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-custom" to="contact" smooth={true} spy={true} duration={500}>
+              <Link
+                className="nav-link text-custom"
+                to="contact"
+                smooth={true}
+                spy={true}
+                duration={500}
+                onClick={() => setIsNavExpanded(false)}
+              >
                 Contact
               </Link>
             </li>
-
           </ul>
         </div>
       </nav>

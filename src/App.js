@@ -11,31 +11,24 @@ const App = () => {
   return (
     <div>
       <Header />
-      <section id="home" className="section" style={{ paddingBottom: "100px" }}>
+     
+      <section id="home" className="section" style={{ padding: "100px 0" }}>
         <Home />
       </section>
-      <section id="about" className="section" style={{ paddingBottom: "100px" }}>
+      <section id="about" className="section container" style={{ padding: "100px 0" }}>
         <About />
       </section>
-      <section id="services" className="section" style={{ paddingBottom: "100px" }}>
+      <section id="services" className="section" style={{ padding: "100px 0" }}>
         <Services />
       </section>
-      <section id="contact" className="section pb-5" style={{ paddingBottom: "100px" }}>
+      <section id="contact" className="section" style={{ padding: "100px 0" }}>
         <Contact />
       </section>
+      <section id="footer" className="section" style={{ padding: "100px 0" }}>
       <Footer />
+      </section>
+      
     </div>
-    // <BrowserRouter>
-    //   <div>
-    //     <Routes>
-    //       <Route path="/" element={<Home />} />
-    //       <Route path="/about" element={<About />} />
-    //       <Route path="/services" element={<Services />} />
-    //       <Route path="/contact" element={<Contact />} />
-    //     </Routes>
-
-    //   </div>
-    // </BrowserRouter>
   );
 };
 
