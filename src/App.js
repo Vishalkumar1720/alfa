@@ -11,7 +11,7 @@ const App = () => {
   return (
     <div>
       <Header />
-     
+
       <section id="home" className="section" style={{ padding: "100px 0" }}>
         <Home />
       </section>
@@ -28,6 +28,7 @@ const App = () => {
       <Footer />
       </section>
       
+
     </div>
   );
 };

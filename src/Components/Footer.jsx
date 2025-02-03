@@ -3,6 +3,7 @@ import SocialMediaIcons from './SocialMediaIcons';
 
 const Footer = () => {
   return (
+
     <>
     <SocialMediaIcons />
     <footer>
@@ -10,6 +11,7 @@ const Footer = () => {
       <p>&copy; 2025 Alfa Square Software Solution. All Rights Reserved.</p>
     </footer>
     </>
+
   );
 };
 

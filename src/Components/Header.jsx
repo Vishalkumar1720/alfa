@@ -68,6 +68,7 @@ const Header = () => {
         <div className={`collapse navbar-collapse ${isNavExpanded ? "show" : ""}`} id="smallScreenMenu">
           <ul className="navbar-nav mx-auto mb-2 mb-lg-0 gap-4">
             <li className="nav-item">
+
               <Link
                 className="nav-link text-custom"
                 to="home"
@@ -76,10 +77,12 @@ const Header = () => {
                 duration={500}
                 onClick={() => setIsNavExpanded(false)} // Close navbar on click
               >
+
                 Home
               </Link>
             </li>
             <li className="nav-item">
+
               <Link
                 className="nav-link text-custom"
                 to="about"
@@ -88,10 +91,12 @@ const Header = () => {
                 duration={500}
                 onClick={() => setIsNavExpanded(false)}
               >
+
                 About
               </Link>
             </li>
             <li className="nav-item">
+
               <Link
                 className="nav-link text-custom"
                 to="services"
@@ -100,10 +105,12 @@ const Header = () => {
                 duration={500}
                 onClick={() => setIsNavExpanded(false)}
               >
+
                 Services
               </Link>
             </li>
             <li className="nav-item">
+
               <Link
                 className="nav-link text-custom"
                 to="contact"
@@ -112,6 +119,7 @@ const Header = () => {
                 duration={500}
                 onClick={() => setIsNavExpanded(false)}
               >
+
                 Contact
               </Link>
             </li>

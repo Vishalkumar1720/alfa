@@ -1,3 +1,4 @@
+
 import React, { useEffect } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
 
@@ -9,6 +10,7 @@ export default function Scene(props) {
   useEffect(() => {
     if (actions && Object.keys(actions).length > 0) {
       actions[Object.keys(actions)[0]].play(); 
+
     }
   }, [actions]);
 

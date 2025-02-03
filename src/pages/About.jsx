@@ -1,11 +1,13 @@
 import React from 'react';
 import '../App.css';
+import AnimatedCounter from '../common/AnimatedCounter';
 
 const About = () => {
   return (
     <div class="bg-black text-white d-flex flex-column justify-content-center align-items-center" style={{msOverflowY: "auto"}}>
       <div className=" px-md-5 pt-5">
       <h1 className="display-4 text-center gradient-text">
+
           Expertise
         </h1>
         <div className='row g-5'>
@@ -32,6 +34,7 @@ const About = () => {
        
       </div>
     </div>
+
           <div className='col-lg-6'>
             <div className="">
               <h5>WHY CHOOSE US</h5>
@@ -48,15 +51,6 @@ const About = () => {
         </div>
       </div>
     </div >
-    // <div className="container-fluid bg-black text-white vh-100 d-flex justify-content-center align-items-center">
-    //   <h1 className="display-4 text-center gradient-text">
-    //     About Alfasquare Software Solution
-    //   </h1>
-    //   <div className="about-container">
-
-    //   </div>
-
-    // </div>
   );
 };
 
