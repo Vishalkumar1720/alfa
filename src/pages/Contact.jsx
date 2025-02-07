@@ -10,7 +10,7 @@ const Contact = () => {
       <h1 className="display-4 text-center gradient-text">Contact Us</h1>
       <div className="row g-5 pt-4">
         <div className="col-12 col-lg-7 d-flex">
-          <div className="bg-dark p-5 rounded-5 w-100">
+          <div className="bg-dark p-5 rounded-5 w-100 custom-content-block">
             <div className="content-block about-content h-100 js-tilt">
               <p>
                 In today’s online world, a powerful and user-friendly website is essential for business success.
@@ -46,7 +46,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="col-12 col-lg-5 d-flex">
-          <div className="bg-dark p-5 rounded-5 w-100">
+          <div className="bg-dark p-5 rounded-5 w-100 custom-content-block">
             <div>
               <h3 className="text-center gradient-text">Make an Enquiry</h3>
               <span className="mb-3 d-block text-center">

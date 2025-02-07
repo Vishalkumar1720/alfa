@@ -123,3 +123,47 @@ html {
   filter: blur(4px); /* Apply blur to the gradient */
 }
 
+@media (max-width: 576.98px) {
+  .custom-content-block {
+      padding: 20px!important;
+  }
+}
+
+@media (max-width: 425px) {
+  .glassIco {
+    --width: 35px!important;
+    font-size: 20px!important;
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.mySwiper {
+  border-radius: 15px; /* Rounded corners */
+  overflow: hidden; /* Ensures the content respects the border radius */
+  background-color: #fff; /* Background color for the carousel area */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional shadow for depth */
+}
+
