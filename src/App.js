@@ -7,7 +7,7 @@ import About from './pages/About.jsx';
 import Services from './pages/Services.jsx';
 import Contact from './pages/Contact.jsx';
 import Carousel from './components/Carousel.jsx';
-
+import ClientSection from './pages/ClientSection.jsx';
 const App = () => {
   return (
     <div>
@@ -15,6 +15,7 @@ const App = () => {
     
       <section id="home" className="section container" style={{ padding: "100px 0" }}>
         <Home />
+        <ClientSection />
       </section>
       <section id="about" className="section container" >
         <About />
