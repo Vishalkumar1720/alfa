@@ -16,7 +16,7 @@ const App = () => {
      
       <section id="home" className="section container" style={{ padding: "100px 0" }}>
         <Home />
-        <Carousel />
+        {/* <Carousel /> */}
         <ClientSection />
 
       </section>

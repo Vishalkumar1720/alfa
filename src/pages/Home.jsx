@@ -4,6 +4,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { Suspense } from 'react';
 import Scene from "../Scene.jsx";
+import Carousel from '../components/iphone_carousel/IphoneCarousel.jsx';
 
 const Home = () => {
   return (
@@ -17,14 +18,16 @@ const Home = () => {
         </Suspense>
       </Canvas>
 
-      <div className="position-absolute top-50 start-50 translate-middle text-center text-white">
+      <div className="position-absolute start-50 translate-middle text-center text-white" style={{ width: "inherit", top: "60%",pointerEvents: "none"}}>
 
-        <h1 className="display-4 gradient-text user-select-none">
+        <h1 className="display-4 gradient-text user-select-none" style={{ pointerEvents: "none"}}>
 
-          Welcome to Alfasquare Software Solution
+          
+          <Carousel />
         </h1>
         
       </div>
+    
     </div>
   );
 };

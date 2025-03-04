@@ -9,13 +9,16 @@
   .carousel {
     display: flex;
     transition: transform 0.5s ease;
+    gap: 20px; 
   }
   
-  .carousel-item {
-    min-width: 100%;
-    box-sizing: border-box;
-    transition: transform 0.5s ease, opacity 0.5s ease;
-  }
+ .carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  margin-right: 20px; 
+}
+
   
   .carousel-item.active {
     transform: scale(1.2);
@@ -47,3 +50,4 @@
   .carousel-control-next {
     right: 10px;
   }
+  
