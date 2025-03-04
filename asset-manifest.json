@@ -1,22 +1,42 @@
 {
   "files": {
-    "main.css": "/alfa/static/css/main.326480b6.css",
-    "main.js": "/alfa/static/js/main.102da2f3.js",
+    "main.css": "/alfa/static/css/main.3551dc5c.css",
+    "main.js": "/alfa/static/js/main.7779f741.js",
+    "static/media/3.png": "/alfa/static/media/3.f8c42417df34122c08d5.png",
+    "static/media/1.png": "/alfa/static/media/1.4188131451d67cc1a8f8.png",
+    "static/media/2.png": "/alfa/static/media/2.5eb430d28b7b39974d5e.png",
+    "static/media/4.png": "/alfa/static/media/4.ebcd1b2df35379cf5606.png",
     "static/media/fa-solid-900.ttf": "/alfa/static/media/fa-solid-900.2582b0e4bcf85eceead0.ttf",
+    "static/media/pngwing.com (4).png": "/alfa/static/media/pngwing.com (4).53bd13277193c967c6c3.png",
+    "static/media/laravel-framework.png": "/alfa/static/media/laravel-framework.970f6bf2f6b3fa2e3bd5.png",
     "static/media/fa-brands-400.ttf": "/alfa/static/media/fa-brands-400.1815e00441357e01619e.ttf",
+    "static/media/mongo-db.png": "/alfa/static/media/mongo-db.2fedbd50d151cada85a6.png",
+    "static/media/nodejs.png": "/alfa/static/media/nodejs.fa040cdea1a2f3b0845a.png",
+    "static/media/typescript.png": "/alfa/static/media/typescript.deeed10d00987380d81b.png",
+    "static/media/angularjs.png": "/alfa/static/media/angularjs.f418935f5608f8d65b07.png",
+    "static/media/php.png": "/alfa/static/media/php.d1d515e76d1af4429a71.png",
+    "static/media/css.png": "/alfa/static/media/css.3ca4ecc85e9d55427f1c.png",
+    "static/media/javascript.png": "/alfa/static/media/javascript.06fe9d89856c7b49883e.png",
     "static/media/fa-solid-900.woff2": "/alfa/static/media/fa-solid-900.2463b90d9a316e4e5294.woff2",
+    "static/media/vue.png": "/alfa/static/media/vue.cfb18c1fd3b47ebe4689.png",
+    "static/media/git.png": "/alfa/static/media/git.cd268e2fe1169e439abc.png",
+    "static/media/tailwind.png": "/alfa/static/media/tailwind.e23b99a56f7c8996e635.png",
+    "static/media/dart.png": "/alfa/static/media/dart.f967e70b75636802f7e4.png",
+    "static/media/mysql.png": "/alfa/static/media/mysql.caee2f4831aba9971339.png",
     "static/media/fa-brands-400.woff2": "/alfa/static/media/fa-brands-400.c210719e60948b211a12.woff2",
     "static/media/fa-regular-400.ttf": "/alfa/static/media/fa-regular-400.914997e1bdfc990d0897.ttf",
     "static/media/Alfasq  logo.png": "/alfa/static/media/Alfasq  logo.c1f11c014e9cf8b16352.png",
     "static/media/fa-regular-400.woff2": "/alfa/static/media/fa-regular-400.89999bdf5d835c012025.woff2",
+    "static/media/pngwing.com (2).png": "/alfa/static/media/pngwing.com (2).a8042d4f255f9708a3cf.png",
+    "static/media/pngwing.com (3).png": "/alfa/static/media/pngwing.com (3).f3e9a084978fb1867ae4.png",
     "static/media/fa-v4compatibility.ttf": "/alfa/static/media/fa-v4compatibility.da94ef451f4969af06e6.ttf",
     "static/media/fa-v4compatibility.woff2": "/alfa/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
     "index.html": "/alfa/index.html",
-    "main.326480b6.css.map": "/alfa/static/css/main.326480b6.css.map",
-    "main.102da2f3.js.map": "/alfa/static/js/main.102da2f3.js.map"
+    "main.3551dc5c.css.map": "/alfa/static/css/main.3551dc5c.css.map",
+    "main.7779f741.js.map": "/alfa/static/js/main.7779f741.js.map"
   },
   "entrypoints": [
-    "static/css/main.326480b6.css",
-    "static/js/main.102da2f3.js"
+    "static/css/main.3551dc5c.css",
+    "static/js/main.7779f741.js"
   ]
 }
