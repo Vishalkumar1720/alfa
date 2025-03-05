@@ -9,13 +9,22 @@ export default function Carroussel(props) {
 
   const [offsetRadius, setOffsetRadius] = useState(2);
   const [showArrows, setShowArrows] = useState(false);
-  const [goToSlide, setGoToSlide] = useState(null);
+  const [goToSlide, setGoToSlide] = useState(0); // Start from the first slide
   const [cards] = useState(table);
 
   useEffect(() => {
     setOffsetRadius(props.offset);
     setShowArrows(props.showArrows);
   }, [props.offset, props.showArrows]);
+
+  // Auto-slide effect
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setGoToSlide((prev) => (prev + 1) % cards.length); // Loop through slides
+    }, 3000); // Change slide every 3 seconds
+
+    return () => clearInterval(interval); // Cleanup interval on unmount
+  }, [cards.length]);
 
   return (
     <div

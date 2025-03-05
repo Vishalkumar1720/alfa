@@ -15,7 +15,7 @@ const [keykey,setKeykey] = useState(0)
   });
   return (
   <div>
-    {keykey}
+    
     <animated.div
     onClick={()=>setKeykey(keyindex)}
       className={Styles.card}
