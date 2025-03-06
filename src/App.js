@@ -6,22 +6,21 @@ import Home from './pages/Home.jsx';
 import About from './pages/About.jsx';
 import Services from './pages/Services.jsx';
 import Contact from './pages/Contact.jsx';
-import Carousel from './components/iphone_carousel/IphoneCarousel.jsx';
 import ClientSection from './pages/ClientSection.jsx';
-import HeroSection from './components/HeroSection.jsx';
+
+
 const App = () => {
   return (
     <div>
       <Header />
      
-      <section id="home" className="section container" style={{ padding: "100px 0" }}>
+      <section id="home" className="section container" style={{ padding: "100px 0",maxWidth:"100%" }} >
         <Home />
-        {/* <Carousel /> */}
         <ClientSection />
 
       </section>
       <section id="about" className="section container" >
-      <HeroSection />
+      {/* <HeroSection /> */}
         <About />
        
       </section>

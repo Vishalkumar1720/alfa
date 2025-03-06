@@ -1,5 +1,6 @@
 import React from 'react';
-import '../App.css'; // Import your CSS file
+import './HeroSection.css'; 
+import '../App.css'; 
 import localImage from '../Assets/images/git.png'; // Adjust the path accordingly
 import mongoDBImage from '../Assets/images/mongo-db.png';
 import mySQLImage from '../Assets/images/mysql.png';
@@ -20,112 +21,37 @@ import laravel from '../Assets/images/laravel-framework.png';
 const HeroSection = () => {
     return (
         <section className="hero-section">
-            <div className="container">
-                <div className="row align-items-center">
-                    <div className="col-lg-6">
-                        <div className="hero-content">
-                            <h1>CODE YOUR VISION</h1>
-                            <h2>Mastering the<br />Languages that<br />Shape the Digital<br />World</h2>
-                            <p>
-                                Don't settle for shaky foundations. We wield the sharpest tools in the software shed - Next.js, React.js, Python, Node.js, and more. Craft a digital empire that stands the test of time, pixel-perfect and ready to thrive. Let's build your breakthrough together.
-                            </p>
-                            <a href="#discover" className="btn btn-primary">Discover now!</a>
-                        </div>
+        <div className="container">
+            <div className="row align-items-center">
+                <div className="col-lg-6">
+                    <div className="hero-content">
+                        <h1>CODE YOUR VISION</h1>
+                        <h2>Mastering the<br />Languages that<br />Shape the Digital<br />World</h2>
+                        <p>
+                            Don't settle for shaky foundations. We wield the sharpest tools in the software shed...
+                        </p>
                     </div>
-                    <div className="col-lg-6">
-                        <div className='row'>
-                            <div className="col-lg-3"><div className="hero-image">
-                                <img src={localImage} alt="Digital World" className="img-fluid" />
+                </div>
+                
+                <div className="col-lg-6">
+                    <div className="row g-2">  {/* Reduced gutter */}
+                        {[
+                            localImage, mongoDBImage, mySQLImage, nodeJSImage,
+                            phpImage, typeScriptImage, vueImage, tailwind,
+                            dartImage, laravel, javaScriptImage, angularJsImage,
+                            cssImage, reactImage, pythonImage, flutterImage
+                        ].map((img, index) => (
+                            <div key={index} className="col-3">  {/* Always 4 columns */}
+                                <div className="hero-image">
+                                    <img src={img} alt="Tech logo" className="img-fluid" />
+                                </div>
                             </div>
-                            </div>
-                            <div className="col-lg-3"><div className="hero-image">
-                                <img src={mongoDBImage} alt="Digital World" className="img-fluid" />
-                            </div>
-                            </div>
-                            <div className="col-lg-3"><div className="hero-image">
-                                <img src={mySQLImage} alt="Digital World" className="img-fluid" />
-                            </div>
-                            </div>
-                            <div className="col-lg-3"><div className="hero-image">
-                                <img src={nodeJSImage} alt="Digital World" className="img-fluid" />
-                            </div>
-                            </div>
-
-
-
-                        </div>
-                        <div className='row'>
-                            <div className="col-lg-3"><div className="hero-image">
-                                <img src={phpImage} alt="Digital World" className="img-fluid" />
-                            </div>
-                            </div>
-                            <div className="col-lg-3"><div className="hero-image">
-                                <img src={typeScriptImage} alt="Digital World" className="img-fluid" />
-                            </div>
-                            </div>
-                            <div className="col-lg-3"><div className="hero-image">
-                                <img src={vueImage} alt="Digital World" className="img-fluid" />
-                            </div>
-                            </div>
-                            <div className="col-lg-3"><div className="hero-image">
-                                <img src={tailwind} alt="Digital World" className="img-fluid" />
-                            </div>
-                            </div>
-
-
-
-                        </div>
-
-                        <div className='row'>
-                            <div className="col-lg-3"><div className="hero-image">
-                                <img src={dartImage} alt="Digital World" className="img-fluid" />
-                            </div>
-                            </div>
-                            <div className="col-lg-3"><div className="hero-image">
-                                <img src={laravel} alt="Digital World" className="img-fluid" />
-                            </div>
-                            </div>
-                            <div className="col-lg-3"><div className="hero-image">
-                                <img src={javaScriptImage} alt="Digital World" className="img-fluid" />
-                            </div>
-                            </div>
-                            <div className="col-lg-3"><div className="hero-image">
-                                <img src={angularJsImage} alt="Digital World" className="img-fluid" />
-                            </div>
-                            </div>
-
-
-
-                        </div>
-
-                     <div className='row'>
-                            <div className="col-lg-3"><div className="hero-image">
-                                <img src={cssImage} alt="Digital World" className="img-fluid" />
-                            </div>
-                            </div>
-                            <div className="col-lg-3"><div className="hero-image">
-                                <img src={reactImage} alt="Digital World" className="img-fluid" />
-                            </div>
-                            </div>
-                            <div className="col-lg-3"><div className="hero-image">
-                                <img src={pythonImage} alt="Digital World" className="img-fluid" />
-                            </div>
-                            </div>
-                            <div className="col-lg-3"><div className="hero-image">
-                                <img src={flutterImage} alt="Digital World" className="img-fluid" />
-                            </div>
-                            </div>
-
-
-
-                        </div>
-
-                    
-
+                        ))}
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
     );
 };
 

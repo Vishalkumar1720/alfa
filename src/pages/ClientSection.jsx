@@ -15,16 +15,16 @@ const ClientsSection = () => {
         {/* First Slider */}
         <ClientSlider direction="ltr" />
 
-        {/* Second Slider */}
-        <ClientSlider direction="rtl" />
+       
 
-        <div className="text-center pt-5">
+        {/* <div className="text-center pt-5">
           <a
             title="Get in Touch"
             className="btn racb-btn btn-lg cta-btn-lg rounded-pill fw600 position-relative z-1"
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
             href="#"
+            style={{ width: "220px" }}
           >
             <div className="tap_invite">
               <div className="white_dot"></div>
@@ -34,7 +34,7 @@ const ClientsSection = () => {
             </div>
             Get A Quote
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );

@@ -1,5 +1,6 @@
 import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
+import '../../App.css';
 
 import Card from "./Card.jsx";
 import Carousel from "./Carousels.jsx";
@@ -46,6 +47,24 @@ const App2 = () => {
     <FaCheckCircle style={{ color: "#3fff00" }} />
     Innovative technology, delivered with precision and speed.
   </p>
+ 
+          <a
+            title="Get in Touch"
+            className="btn racb-btn btn-lg cta-btn-lg rounded-pill fw600 position-relative z-1"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            href="#"
+            style={{ width: "220px" }}
+          >
+            <div className="tap_invite">
+              <div className="white_dot"></div>
+              <div className="circle one"></div>
+              <div className="circle two"></div>
+              <div className="circle three"></div>
+            </div>  
+            Get A Quote
+          </a>
+    
 </div>
 
     

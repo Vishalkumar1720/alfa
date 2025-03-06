@@ -1,6 +1,8 @@
 import React from 'react';
 import '../App.css';
 import AnimatedCounter from '../common/AnimatedCounter';
+import HeroSection from '../components/HeroSection.jsx';
+
 
 const About = () => {
   return (
@@ -10,6 +12,7 @@ const About = () => {
 
           Expertise
         </h1>
+        <HeroSection />
         <div className='row g-5'>
         <div className="col-lg-6" style={{ height: "500px", overflowY: "scroll" }}>
       <div className="text-white">
@@ -34,6 +37,7 @@ const About = () => {
        
       </div>
     </div>
+     
 
           <div className='col-lg-6'>
             <div className="">
