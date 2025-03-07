@@ -16,9 +16,12 @@ const App = () => {
      
       <section id="home" className="section container" style={{ padding: "100px 0",maxWidth:"100%" }} >
         <Home />
-        <ClientSection />
+       
 
       </section>
+      <section id="client_slider" className="section container" style={{ padding: "100px 0",maxWidth:"100%" }} >
+      <ClientSection />
+        </section>
       <section id="about" className="section container" >
       {/* <HeroSection /> */}
         <About />
