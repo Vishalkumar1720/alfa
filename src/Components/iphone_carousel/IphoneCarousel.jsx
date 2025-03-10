@@ -1,5 +1,4 @@
 import React from "react";
-import { FaCheckCircle } from "react-icons/fa";
 import "../../App.css";
 
 import Card from "./Card.jsx";
@@ -27,36 +26,7 @@ const App2 = () => {
     <div className="container-fluid py-5">
       <div className="row align-items-center text-white">
         
-        {/* Left Side: Text Content */}
-        <div className="col-lg-6 col-md-12 text-center text-lg-start px-4">
-          <h1 className="fw-bold display-5 mb-3">
-            <span style={{ color: "#ffcc00" }}>Transforming</span> Ideas into{" "}
-            <span style={{ color: "#00ccff" }}>Intelligent</span> Software Solutions
-          </h1>
-          <p className="lead d-flex align-items-center gap-2">
-            <FaCheckCircle style={{ color: "#00ccff" }} />
-            Custom-built applications designed to grow with your business.
-          </p>
-          <p className="lead d-flex align-items-center gap-2">
-            <FaCheckCircle style={{ color: "#3fff00" }} />
-            Innovative technology, delivered with precision and speed.
-          </p>
-
-          <a
-            title="Get in Touch"
-            className="btn btn-warning btn-lg rounded-pill fw-bold mt-3"
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
-            href="#"
-            style={{ width: "220px" }}
-          >
-            Get A Quote
-          </a>
-        </div>
-
-        {/* Right Side: Carousel */}
-        <div className="col-lg-6 col-md-12 d-flex justify-content-center mt-5 mt-lg-0">
-          <Carousel
+               <Carousel
             cards={cards}
             height="500px"
             width="70%"
@@ -64,8 +34,7 @@ const App2 = () => {
             offset={10}
             showArrows={false}
           />
-        </div>
-
+       
       </div>
     </div>
   );
