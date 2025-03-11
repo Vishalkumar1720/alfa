@@ -6,11 +6,7 @@ const ClientsSection = () => {
   return (
     <section className="clients-section" id="client">
       <div className="container-fluid px-0">
-        <div className="fade-in-move-on-scroll">
-          <div className="gradiant-color">
-            <p>Trusted by Top-Tier Clients</p>
-          </div>
-        </div>
+       
 
         {/* First Slider */}
         <ClientSlider direction="ltr" />

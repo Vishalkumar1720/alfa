@@ -28,7 +28,7 @@ const App2 = () => {
         
                <Carousel
             cards={cards}
-            height="500px"
+            height="375px"
             width="70%"
             margin="0 auto"
             offset={10}

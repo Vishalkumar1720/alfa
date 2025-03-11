@@ -79,7 +79,7 @@ const Home = () => {
           <div className="col-12 col-md-6" style={{ pointerEvents: "auto" }}>
             <Carousel
               cards={cards}
-              height="500px"
+              height="375px"
               width="70%"
               margin="0 auto"
               offset={10}

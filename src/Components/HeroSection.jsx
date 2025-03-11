@@ -33,7 +33,7 @@ const HeroSection = () => {
                     </div>
                 </div>
                 
-                <div className="col-lg-6">
+                <div className="col-lg-6" >
                     <div className="row g-2">  {/* Reduced gutter */}
                         {[
                             localImage, mongoDBImage, mySQLImage, nodeJSImage,
