@@ -13,30 +13,30 @@ const App = () => {
   return (
     <div>
       <Header />
-     
-      <section id="home" className="section container" style={{ padding: "100px 0 0",maxWidth:"100%" }} >
+
+      <section id="home" className="section container-fluid" style={{ padding: "100px 0 0", maxWidth: "100%" }} >
         <Home />
-       
+
 
       </section>
-      <section id="client_slider" className="section container" style={{ padding: "0px",maxWidth:"100%" }} >
-      <ClientSection />
-        </section>
-      <section id="about" className="section container" >
-      {/* <HeroSection /> */}
-        <About />
-       
+      <section id="client_slider" className="section container-fluid" style={{ padding: "0px", maxWidth: "100%" }} >
+        <ClientSection />
       </section>
-      <section id="services" className="section container">
+      <section id="about" className="section container-fluid" >
+        {/* <HeroSection /> */}
+        <About />
+
+      </section>
+      <section id="services" className="section container-fluid">
         <Services />
       </section>
-      <section id="contact" className="section container" >
+      <section id="contact" className="section container-fluid" >
         <Contact />
       </section>
-      <section id="footer" className="section container" >
-      <Footer />
+      <section id="footer" className="section container-fluid" >
+        <Footer />
       </section>
-      
+
 
     </div>
   );

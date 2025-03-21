@@ -21,7 +21,7 @@ import laravel from '../Assets/images/laravel-framework.png';
 const HeroSection = () => {
     return (
         <section className="hero-section">
-        <div className="container">
+        <div className="container-fluid">
             <div className="row align-items-center">
                 <div className="col-lg-6">
                     <div className="hero-content">

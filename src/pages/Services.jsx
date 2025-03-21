@@ -10,7 +10,7 @@ const Services = () => {
     </h1>
   
   {/* Futuristic Cards Section */}
-  <div className="container mt-5">
+  <div className="container-fluid mt-5">
     <div className="row g-4 justify-content-center">
       {/* Card 1 - AI Solutions */}
       <div className="col-12 col-md-4">
