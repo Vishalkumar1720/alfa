@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/alfa/static/css/main.c053b9cf.css",
-    "main.js": "/alfa/static/js/main.c6ce162a.js",
+    "main.js": "/alfa/static/js/main.077ae23a.js",
     "static/media/3.png": "/alfa/static/media/3.f8c42417df34122c08d5.png",
     "static/media/1.png": "/alfa/static/media/1.4188131451d67cc1a8f8.png",
     "static/media/2.png": "/alfa/static/media/2.5eb430d28b7b39974d5e.png",
@@ -27,16 +27,17 @@
     "static/media/fa-regular-400.ttf": "/alfa/static/media/fa-regular-400.914997e1bdfc990d0897.ttf",
     "static/media/Alfasq  logo.png": "/alfa/static/media/Alfasq  logo.c1f11c014e9cf8b16352.png",
     "static/media/fa-regular-400.woff2": "/alfa/static/media/fa-regular-400.89999bdf5d835c012025.woff2",
+    "static/media/Alfas_c.png": "/alfa/static/media/Alfas_c.0173d48bdf9b53a95a9f.png",
     "static/media/pngwing.com (2).png": "/alfa/static/media/pngwing.com (2).a8042d4f255f9708a3cf.png",
     "static/media/pngwing.com (3).png": "/alfa/static/media/pngwing.com (3).f3e9a084978fb1867ae4.png",
     "static/media/fa-v4compatibility.ttf": "/alfa/static/media/fa-v4compatibility.da94ef451f4969af06e6.ttf",
     "static/media/fa-v4compatibility.woff2": "/alfa/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
     "index.html": "/alfa/index.html",
     "main.c053b9cf.css.map": "/alfa/static/css/main.c053b9cf.css.map",
-    "main.c6ce162a.js.map": "/alfa/static/js/main.c6ce162a.js.map"
+    "main.077ae23a.js.map": "/alfa/static/js/main.077ae23a.js.map"
   },
   "entrypoints": [
     "static/css/main.c053b9cf.css",
-    "static/js/main.c6ce162a.js"
+    "static/js/main.077ae23a.js"
   ]
 }
