@@ -1,6 +1,6 @@
 import React from 'react';
 import ClientSlider from './ClientSlider';
-import '../App.css'; // Import your CSS file
+import '../App.css'; 
 
 const ClientsSection = () => {
   return (
