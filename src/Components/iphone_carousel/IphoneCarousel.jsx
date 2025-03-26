@@ -1,6 +1,5 @@
 import React from "react";
 import "../../App.css";
-
 import Card from "./Card.jsx";
 import Carousel from "./Carousels.jsx";
 import image1 from "../../Assets/images/1.png";

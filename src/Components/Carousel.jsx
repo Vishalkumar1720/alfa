@@ -1,12 +1,9 @@
 import React, { useRef, useState } from 'react';
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import logo from "../Assets/images/Alfasq  logo.png"; 
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-
 import '../App.css';
 
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
