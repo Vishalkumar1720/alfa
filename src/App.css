@@ -164,6 +164,7 @@ html {
   overflow: hidden; /* Ensures the content respects the border radius */
   background-color: #fff; /* Background color for the carousel area */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional shadow for depth */
+  height: 500px;
 }
 
 /* App.css */
@@ -518,4 +519,61 @@ html {
 @keyframes rotate {
   0% { filter: hue-rotate(0deg); }
   100% { filter: hue-rotate(360deg); }
+}
+
+
+
+/* workingprogress
+ 
+*/
+
+
+process-step {
+  background: #222;
+  color: #fff;
+  padding: 20px;
+  border-radius: 50%;
+  text-align: center;
+  width: 130px;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.process-step:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+}
+
+.process-icon {
+  font-size: 2rem;
+  color: #00d4ff;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+.quote-btn {
+  background: linear-gradient(135deg, #ff007f, #8f00ff);
+  color: white;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.quote-btn:hover {
+  background: linear-gradient(135deg, #8f00ff, #ff007f);
+  transform: scale(1.1);
+  box-shadow: 0px 0px 15px rgba(255, 0, 255, 0.8);
 }

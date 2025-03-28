@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <div
       className="container-fluid bg-black text-white d-flex flex-column justify-content-center align-items-center"
-      style={{ padding: "80px 0" }} // Adjusted padding to create natural spacing
+      // Adjusted padding to create natural spacing
     >
       <h1 className="display-4 text-center gradient-text">Contact Us</h1>
       <div className="row g-5 pt-4">

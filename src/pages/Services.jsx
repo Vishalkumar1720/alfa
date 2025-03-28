@@ -1,6 +1,7 @@
 import React from 'react';
 import '../App.css';
 import Carousel from '../components/Carousel';
+import WorkingProcess from '../components/WorkingProcess';
 
 const Services = () => {
   return (
@@ -104,6 +105,8 @@ const Services = () => {
   
 
   <Carousel className="mt-5" />
+
+  <WorkingProcess />
 </div>
 
   );
