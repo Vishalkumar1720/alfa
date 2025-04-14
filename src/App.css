@@ -448,84 +448,6 @@ html {
   from { transform: translate3d(0, 0, 0); }
   to { transform: translate3d(-50%, 0, 0); }
 }
-/* cleint section css end */
-
-
-/* our service cards css  */
-.futuristic-card {
-  background: linear-gradient(145deg, #0a0a0a, #111111);
-  border-radius: 15px;
-  position: relative;
-  overflow: hidden;
-  transition: all 0.3s ease;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.futuristic-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 30px rgba(25, 25, 112, 0.3);
-}
-
-.futuristic-card::before {
-  content: '';
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  background: linear-gradient(45deg, 
-    rgba(25, 25, 112, 0.3),
-    rgba(47, 79, 79, 0.3),
-    rgba(30, 144, 255, 0.3));
-  z-index: -1;
-  animation: rotate 3s linear infinite;
-}
-
-.gradient-text-purple {
-  background: linear-gradient(45deg, #6a5acd, #9370db);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.gradient-text-blue {
-  background: linear-gradient(45deg, #4682b4, #5f9ea0);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.gradient-text-green {
-  background: linear-gradient(45deg, #2e8b57, #3cb371);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.gradient-text-pink {
-  background: linear-gradient(45deg, #9932cc, #ba55d3);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.glow-effect {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: radial-gradient(circle at 50% 0%, rgba(0, 255, 255, 0.1), transparent 60%);
-  pointer-events: none;
-}
-
-@keyframes rotate {
-  0% { filter: hue-rotate(0deg); }
-  100% { filter: hue-rotate(360deg); }
-}
-
-
-
-/* workingprogress
- 
-*/
 
 
 process-step {
@@ -576,4 +498,56 @@ p {
   background: linear-gradient(135deg, #8f00ff, #ff007f);
   transform: scale(1.1);
   box-shadow: 0px 0px 15px rgba(255, 0, 255, 0.8);
+}
+
+/* our service card css */
+
+.futuristic-card-wrapper {
+  position: relative;
+  perspective: 1000px;      /* depth for the tilt */
+  overflow: hidden;         /* clip the aura at the edges */
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* the card itself */
+.futuristic-card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.1s ease;
+  will-change: transform;
+}
+
+.futuristic-card-wrapper.edge-highlight {
+  /* option A: simple border */
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+
+  /* option B: glow instead of hard border */
+  /* box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.8); */
+}
+
+/* when resetting on mouse leave, use a slightly slower transition */
+.futuristic-card.leaving {
+  transition: transform 0.5s ease;
+}
+
+/* your “aura” spotlight */
+.gradient-cursor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;             /* diameter of the aura */
+  height: 250px;
+  pointer-events: none;     /* don’t block clicks */
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at center,
+    rgba(138, 43, 226, 0.4) 0%,
+    transparent 60%
+  );
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
 }
